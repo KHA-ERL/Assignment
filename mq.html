@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body style="line-height: 1.6; padding: 20px; background-color: #f4f4f4; color: #333; font-family: Arial, sans-serif;">
+
+    <header style="text-align: center; padding: 20px; background-color: #333; color: #fff;">
+        <h1 style="margin: 0;">Welcome to My World</h1>
+    </header>
+
+    <main style="margin: 20px auto; max-width: 1000px;">
+        <section class="intro" style="text-align: center; margin-bottom: 40px;">
+            <picture>
+                <!-- For mobile devices -->
+                <source srcset="./media/altschoolpic.png" media="(max-width: 600px)">
+                <!-- For tablets -->
+                <source srcset="./media/altschoolpic.png" media="(max-width: 1024px)">
+                <!-- For laptops and desktops -->
+                <source srcset="./media/altschoolpic.png" media="(min-width: 1025px)">
+                <!-- Fallback for browsers that do not support the <picture> element -->
+                <img src="./media/altschoolpic.png" alt="A picture of me" style="max-width: 100%; height: auto; border-radius: 10px;">
+            </picture>
+            <p style="margin: 20px 0;">
+                Hi, I'm Michael, a passionate developer on a journey to build lasting solutions. With a decade of self-taught coding experience, I've recently embarked on a more structured learning path at AltSchool Africa.
+            </p>
+        </section>
+
+        <section class="media" style="text-align: center;">
+            <h2 style="margin: 20px 0;">My Journey in Sound</h2>
+            <audio controls style="width: 100%; max-width: 600px; margin: 20px 0;">
+                <source src="audio/my-story.mp3" type="audio/mp3">
+                <source src="audio/my-story.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h2 style="margin: 20px 0;">Watch My Growth</h2>
+            <video controls style="width: 100%; max-width: 600px; margin: 20px 0;">
+                <source src="./media/3125427-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                <source src="./media/3125427-uhd_3840_2160_25fps.mp4" type="video/webm">
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 10px; background-color: #333; color: #fff; position: fixed; bottom: 0; width: 100%;">
+        <p style="margin: 0;">&copy; 2024 Michael All rights reserved.</p>
+    </footer>
+
+    <!-- Inline media queries for responsiveness -->
+    <style>
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .intro img {
+                border-radius: 15px !important;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .intro img {
+                border-radius: 20px !important;
+            }
+        }
+    </style>
+</body>
+</html>
